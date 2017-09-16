@@ -15,12 +15,13 @@ class ApiController {
 		if(isset($file)){
 
 			$extension = $file->getClientOriginalExtension();
-			Storage::disk('local')->put($file->getFilename().'.'.$extension,  File::get($file));
+			$filename = $file->getFilename().'.'.$extension,  File::get($file);
+			Storage::disk('local')->put($filename);
 
 			return response()->json([
 				'Status' => 'OK',
-				'Message' => Storage::disk('local')->url($file->getFilename().'.'.$extension,  File::get($file)),
-				'Words' => $this->getVideoData()
+				'Message' => Storage::disk('local')->url($filename),
+				'Words' => $this->getVideoData(Storage::disk('local')->url($filename)
 			]);
 		} else {
 			return response()->json([
@@ -31,7 +32,7 @@ class ApiController {
 
 	}
 
-	public function getVideoData(){
+	public function getVideoData( $videoFile ){
 
 		//get from google
 		$words = array("Person", "Buidling", "Thing");
