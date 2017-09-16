@@ -17,7 +17,8 @@ while(keepMaking):
         #if(host == 'q'):
 		#keepMaking = False
 	# Wrap the raw video with an MP4 container: 
-	p2 = subprovcess.Popen(['MP4Box', '-add', 'video%s.h264' % str(videoNumber), 'video%s.mp4' % str(videoNumber)], stdout=subprocess.PIPE)
+	p2 = subprocess.Popen(['MP4Box', '-add', 'video%s.h264' % str(videoNumber), 'video%s.mp4' % str(videoNumber)], stdout=subprocess.PIPE)
+	p3 = subprocess.Popen(['rm', 'video%s.h264' % str(videoNumber)], stdout=subprocess.PIPE)
 	# Remove the source raw file, leaving the remaining pivideo.mp4 file to play
 	rm 'video%s.h264' % str(videoNumber)
 	time.sleep(10000)
