@@ -1,0 +1,487 @@
+{
+  "name": "us-west1.7299241097510431900",
+  "metadata": {
+    "@type": "type.googleapis.com/google.cloud.videointelligence.v1beta1.AnnotateVideoProgress",
+    "annotationProgress": [
+      {
+        "inputUri": "/cloud-ml-sandbox/video/chicago.mp4",
+        "progressPercent": 100,
+        "startTime": "2017-09-16T12:52:49.977506Z",
+        "updateTime": "2017-09-16T12:53:09.702165Z"
+      }
+    ]
+  },
+  "done": true,
+  "response": {
+    "@type": "type.googleapis.com/google.cloud.videointelligence.v1beta1.AnnotateVideoResponse",
+    "annotationResults": [
+      {
+        "inputUri": "/cloud-ml-sandbox/video/chicago.mp4",
+        "labelAnnotations": [
+          {
+            "description": "New York City",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.8469136,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.8469136,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "building",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.42035094,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.42035094,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "bus",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.86475587,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.86475587,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "car",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.9374764,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.9374764,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "city",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.9664619,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.9664619,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "downtown",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.98352104,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.98352104,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "infrastructure",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.5684082,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.5684082,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "land vehicle",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.42833233,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.42833233,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "lane",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.522443,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.522443,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "metropolis",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.70255727,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.70255727,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "metropolitan area",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.94977784,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.94977784,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "motor vehicle",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.665753,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.665753,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "pedestrian",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.60235006,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.60235006,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "pedestrian crossing",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.4099896,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.4099896,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "road",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.8423761,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.8423761,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "street",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.973952,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.973952,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "taxi",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.7113388,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.7113388,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "traffic",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.941059,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.941059,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "traffic congestion",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.5472057,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.5472057,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "transport",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.66574144,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.66574144,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "urban area",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.9469805,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.9469805,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          },
+          {
+            "description": "vehicle",
+            "languageCode": "en-us",
+            "locations": [
+              {
+                "segment": {
+                  "startTimeOffset": "-1",
+                  "endTimeOffset": "-1"
+                },
+                "confidence": 0.9199582,
+                "level": "VIDEO_LEVEL"
+              },
+              {
+                "segment": {
+                  "endTimeOffset": "38752016"
+                },
+                "confidence": 0.9199582,
+                "level": "SHOT_LEVEL"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
