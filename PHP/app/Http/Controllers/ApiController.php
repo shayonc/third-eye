@@ -10,18 +10,18 @@ class ApiController {
 
 	public function index() {
 
-		$file = Request::file('filefield');
+		$file = request()->file('filefield');
 
 		if(isset($file)){
 
 			$extension = $file->getClientOriginalExtension();
-			$filename = $file->getFilename().'.'.$extension,  File::get($file);
-			Storage::disk('local')->put($filename);
+			$filename = $file->getFilename().'.'.$extension;
+			Storage::disk('local')->put($filename, File::get($file));
 
 			return response()->json([
 				'Status' => 'OK',
-				'Message' => Storage::disk('local')->url($filename),
-				'Words' => $this->getVideoData(Storage::disk('local')->url($filename)
+				'Message' => Storage::disk('local')->url( $filename, File::get($file)),
+				'Words' => $this->getVideoData( Storage::disk('local')->url($filename) )
 			]);
 		} else {
 			return response()->json([
