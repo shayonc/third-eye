@@ -1,5 +1,6 @@
 # Import the module
 import subprocess
+import thread
 import time
 
 keepMaking = True
@@ -11,8 +12,11 @@ print("Press q to quit process.")
 while(keepMaking):
 	# Set up the echo command and direct the output to a pipe
 	p1 = subprocess.Popen(['raspivid', '-o', 'video%s.h264' % str(videoNumber), '-t', '2000'], stdout=subprocess.PIPE)
-	videoNumber += 1
 
+        print("File : %s", str(videoNumber))
+
+        time.sleep(1000)
+        #give time for video file to be created
 	#host = raw_input(.)
         #if(host == 'q'):
 		#keepMaking = False
@@ -22,3 +26,4 @@ while(keepMaking):
 	# Remove the source raw file, leaving the remaining pivideo.mp4 file to play
 	#rm 'video%s.h264' % str(videoNumber)
 	time.sleep(10000)
+        videoNumber+=1
