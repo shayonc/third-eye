@@ -3,7 +3,7 @@
 import RPi.GPIO as GPIO
 import time
 
-GPIO.setmode(GPIO.BCM) 
+GPIO.setmode(GPIO.BOARD) 
 
 TRIG = 23 
 ECHO = 24
@@ -20,7 +20,7 @@ GPIO.setup(ECHO,GPIO.IN)
 while True:
   
   GPIO.output(TRIG, False)
-  print "Waitng For Sensor To Settle"
+  print "Waiting For Sensor To Settle"
   time.sleep(2)
 
   GPIO.output(TRIG, True)
