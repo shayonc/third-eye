@@ -1,4 +1,4 @@
-### Third-Eye
+# Third-Eye
 Third-Eye helps visually impaired people be better informed about their surroundings.
 This project won the Hack the North 2017 IBM Watson API prize for using Watson's computer vision and natural language underestanding APIs. 
 
